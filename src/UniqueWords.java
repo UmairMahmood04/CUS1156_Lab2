@@ -13,13 +13,13 @@ public class UniqueWords
 		boolean unique;
 		for (int i = 0; i < list.size(); i++) {
 			unique= true;
-			for (int j = 0; j < list.size(); j++){
-				if(i!=j&&list.get(i).equals(list.get(j))) {
+			for (int j = 0; j < i; j++){
+				if(list.get(i).equals(list.get(j))) {
 					unique=false;
 					break;
 				}
 			}
-			if (unique) {
+			if (unique==true) {
 				count++;
 			}
 		}
